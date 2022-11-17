@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <!--
+      font-family: 'Inter', sans-serif;
+      Weights: 400, 700, 800
+    -->
+
+  <!-- CSS STYLESHEETS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- HEADER SECTION START -->
+  <header>
+
+    <nav>
+
+      <img src="assets/images/logo.svg" alt="">
+
+      <ul class="principal-nav">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">New</a>
+        </li>
+        <li>
+          <a href="#">Popular</a>
+        </li>
+        <li>
+          <a href="#">Trending</a>
+        </li>
+        <li>
+          <a href="#">Categories</a>
+        </li>
+      </ul>
+      
+      <div class="menu-img"></div>
+
+    </nav>
+
+  </header>
+  <!-- HEADER SECTION END -->
+
+  <!-- MAIN SECTION START -->
+  <main>
+
+    <!-- desplegable-nav NAVEGATION start -->
+    <div class="back">
+      <ul class="desplegable-nav">
+        <div class="close-contain">
+          <div class="close-img"></div>
+        </div>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">New</a>
+        </li>
+        <li>
+          <a href="#">Popular</a>
+        </li>
+        <li>
+          <a href="#">Trending</a>
+        </li>
+        <li>
+          <a href="#">Categories</a>
+        </li>
+      </ul>
+    </div>
+    <!-- desplegable-nav NAVEGATION end -->
+
+    <!-- main-grid SECTION start -->
+    <section class="main-grid">
+
+      <!-- left-side ARTICLE start -->
+      <article class="left-side">
+
+        <div class="main-LS-img"></div>
+
+        <section class="down-main-LS">
+
+          <h1>The Bright Future of Web 3.0?</h1>
+
+          <div>
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?</p>
+
+            <button>Read more</button>
+          </div>
+
+        </section>
+
+      </article>
+      <!-- left-side ARTICLE end -->
+
+      <!-- right-side ARTICLE start -->
+      <article class="right-side">
+        <h2>New</h2>
+
+        <section class="notice first-n">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </section>
+
+        <section class="notice second-n">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </section>
+
+        <section class="notice third-n">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </section>
+
+      </article>
+      <!-- right-side ARTICLE end -->
+
+    </section>
+    <!-- main-grid SECTION end -->
+
+    <!-- down-flex SECTION start -->
+    <section class="down-flex">
+
+      <article class="flex-element-one">
+
+        <div class="FEOne-img image-element"></div>
+
+        <div>
+          <strong>01</strong>
+          <a href="#">Reviving Retro PCs</a>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+
+      </article>
+
+      <article class="flex-element-two">
+
+        <div class="FETwo-img image-element"></div>
+        
+        <div>
+          <strong>02</strong>
+          <a href="#">Top 10 Laptops of 2022</a>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+
+      </article>
+
+      <article class="flex-element-three">
+
+        <div class="FEThree-img image-element"></div>
+        
+        <div>
+          <strong>03</strong>
+          <a href="#">The Growth of Gaming</a>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+
+      </article>
+
+    </section>
+    <!-- down-flex SECTION end -->
+
+  </main>
+  <!-- MAIN SECTION END -->
+
+  <script>
+    document.querySelector('.menu-img').addEventListener('click', () => {
+      document.querySelector('.desplegable-nav').classList.add('visible');
+      document.querySelector('.back').classList.add('visible');
+    })
+
+    document.querySelector('.close-img').addEventListener('click', () => {
+      document.querySelector('.desplegable-nav').classList.remove('visible');
+      document.querySelector('.back').classList.remove('visible');
+    })
+  </script>
+
+</body>
+</html>
